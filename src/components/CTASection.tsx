@@ -31,13 +31,13 @@ const CTASection = () => {
             </Button>
             
             <div className="flex flex-col sm:flex-row gap-4">
-              <a href="tel:+5511999999999" className="flex items-center text-white hover:text-white/80 transition-colors">
+              <a href="tel:+5586" className="flex items-center text-white hover:text-white/80 transition-colors">
                 <Phone className="w-5 h-5 mr-2" />
-                <span className="text-lg">(11) 99999-9999</span>
+                <span className="text-lg">(86) 99427-8721</span>
               </a>
               <a href="mailto:contato@exemplo.com" className="flex items-center text-white hover:text-white/80 transition-colors">
                 <Mail className="w-5 h-5 mr-2" />
-                <span className="text-lg">contato@exemplo.com</span>
+                <span className="text-lg">joseluis.123.br@gmail.com</span>
               </a>
             </div>
           </div>

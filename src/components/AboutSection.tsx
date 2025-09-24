@@ -9,7 +9,7 @@ const AboutSection = () => {
           
           <div className="bg-card rounded-2xl p-12 shadow-card border border-border/50">
             <p className="text-xl leading-relaxed text-foreground">
-              Eu sou <strong className="text-primary font-semibold">[Seu Nome]</strong>, especialista em design de landing pages, focado em ajudar negócios locais a se destacarem online. Se você é proprietário de um restaurante, loja ou outro estabelecimento, sei como é importante criar uma experiência digital que atraia clientes da sua área.
+              Eu sou <strong className="text-primary font-semibold">José Luis</strong>, estudante de Engenharia de Software na UNIFSA, focado em ajudar negócios locais a se destacarem online. Se você é proprietário de um restaurante, loja ou outro estabelecimento, sei como é importante criar uma experiência digital que atraia clientes da sua área.
             </p>
             <p className="text-xl leading-relaxed text-muted-foreground mt-6">
               <strong className="text-accent">Junte-se aos meus clientes satisfeitos</strong> e veja seu negócio prosperar!
