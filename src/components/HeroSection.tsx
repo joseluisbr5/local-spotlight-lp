@@ -1,0 +1,61 @@
+import { Button } from "@/components/ui/button";
+import { ArrowRight } from "lucide-react";
+import heroImage from "@/assets/hero-landing-page.jpg";
+
+const HeroSection = () => {
+  return (
+    <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
+      {/* Background gradient */}
+      <div className="absolute inset-0 bg-gradient-hero opacity-10" />
+      
+      {/* Content container */}
+      <div className="container mx-auto px-4 z-10">
+        <div className="grid lg:grid-cols-2 gap-12 items-center">
+          {/* Text content */}
+          <div className="space-y-8">
+            <div className="space-y-4">
+              <h1 className="text-5xl lg:text-6xl font-bold leading-tight">
+                Transforme Seu{" "}
+                <span className="bg-gradient-primary bg-clip-text text-transparent">
+                  Estabelecimento Local
+                </span>{" "}
+                com Uma Landing Page Profissional
+              </h1>
+              <p className="text-xl text-muted-foreground leading-relaxed max-w-2xl">
+                Crie uma presença online que converte visitantes em clientes fiéis com uma landing page personalizada, otimizada para atrair e engajar sua comunidade local.
+              </p>
+            </div>
+            
+            <div className="flex flex-col sm:flex-row gap-4">
+              <Button size="lg" className="bg-gradient-primary hover:opacity-90 shadow-hero text-lg px-8 py-6">
+                Solicite Sua Landing Page
+                <ArrowRight className="ml-2 h-5 w-5" />
+              </Button>
+              <Button variant="outline" size="lg" className="text-lg px-8 py-6">
+                Ver Casos de Sucesso
+              </Button>
+            </div>
+          </div>
+          
+          {/* Hero image */}
+          <div className="relative">
+            <div className="relative rounded-2xl overflow-hidden shadow-hero">
+              <img 
+                src={heroImage} 
+                alt="Landing page profissional em laptop" 
+                className="w-full h-auto"
+              />
+              <div className="absolute inset-0 bg-gradient-primary opacity-10" />
+            </div>
+            
+            {/* Floating elements */}
+            <div className="absolute -top-4 -right-4 w-24 h-24 bg-accent rounded-full opacity-20 animate-pulse" />
+            <div className="absolute -bottom-8 -left-8 w-32 h-32 bg-primary rounded-full opacity-10 animate-pulse delay-1000" />
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default HeroSection;
