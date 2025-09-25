@@ -10,27 +10,30 @@ const cases = [
     title: "Restaurante Villa Toscana",
     description: "Landing page otimizada para um restaurante italiano local, focando em reservas online e delivery.",
     result: "Aumento de 45% nas reservas online",
-    category: "Restaurante"
+    category: "Restaurante",
+    link: "https://exemplo-restaurante.com" // Substituir pelo link real
   },
   {
     image: retailCase,
     title: "Boutique Moderna",
     description: "Página de vendas para loja de roupas femininas, destacando coleções e facilitando contato.",
     result: "Crescimento de 60% no tráfego local",
-    category: "Varejo"
+    category: "Varejo",
+    link: "https://exemplo-boutique.com" // Substituir pelo link real
   },
   {
     image: coffeeCase,
     title: "Café Central",
     description: "Website para cafeteria artesanal, promovendo eventos e cardápio especial.",
     result: "Aumento de 35% em novos clientes",
-    category: "Cafeteria"
+    category: "Cafeteria",
+    link: "https://exemplo-cafe.com" // Substituir pelo link real
   }
 ];
 
 const CasesSection = () => {
   return (
-    <section className="py-24 bg-gradient-card">
+    <section id="cases-section" className="py-24 bg-gradient-card">
       <div className="container mx-auto px-4">
         <div className="text-center space-y-6 mb-16">
           <h2 className="text-4xl lg:text-5xl font-bold">
@@ -65,10 +68,18 @@ const CasesSection = () => {
                 <p className="text-muted-foreground leading-relaxed">
                   {caseItem.description}
                 </p>
-                <div className="pt-4 border-t border-border/50">
+                <div className="pt-4 border-t border-border/50 space-y-3">
                   <p className="text-accent font-semibold text-lg">
                     📈 {caseItem.result}
                   </p>
+                  <a 
+                    href={caseItem.link} 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="inline-block text-primary hover:text-primary/80 font-medium transition-colors"
+                  >
+                    Ver projeto →
+                  </a>
                 </div>
               </CardContent>
             </Card>
