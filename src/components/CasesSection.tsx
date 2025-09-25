@@ -33,18 +33,18 @@ const cases = [
 
 const CasesSection = () => {
   return (
-    <section id="cases-section" className="py-24 bg-gradient-card">
+    <section id="cases-section" className="py-16 lg:py-24 bg-gradient-card">
       <div className="container mx-auto px-4">
-        <div className="text-center space-y-6 mb-16">
-          <h2 className="text-4xl lg:text-5xl font-bold">
+        <div className="text-center space-y-4 lg:space-y-6 mb-12 lg:mb-16">
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold">
             Casos de Sucesso
           </h2>
-          <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
+          <p className="text-lg sm:text-xl text-muted-foreground max-w-3xl mx-auto">
             Veja alguns dos meus projetos anteriores. Eu criei landing pages para restaurantes, lojas de varejo e outros estabelecimentos locais, gerando resultados reais!
           </p>
         </div>
 
-        <div className="grid lg:grid-cols-3 gap-8">
+        <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3 lg:gap-8">
           {cases.map((caseItem, index) => (
             <Card 
               key={index}
@@ -61,22 +61,22 @@ const CasesSection = () => {
                 </Badge>
               </div>
               
-              <CardContent className="p-6 space-y-4">
-                <h3 className="text-2xl font-semibold text-foreground">
+              <CardContent className="p-5 lg:p-6 space-y-4">
+                <h3 className="text-xl lg:text-2xl font-semibold text-foreground">
                   {caseItem.title}
                 </h3>
-                <p className="text-muted-foreground leading-relaxed">
+                <p className="text-sm lg:text-base text-muted-foreground leading-relaxed">
                   {caseItem.description}
                 </p>
-                <div className="pt-4 border-t border-border/50 space-y-3">
-                  <p className="text-accent font-semibold text-lg">
+                <div className="pt-3 lg:pt-4 border-t border-border/50 space-y-3">
+                  <p className="text-accent font-semibold text-base lg:text-lg">
                     📈 {caseItem.result}
                   </p>
                   <a 
                     href={caseItem.link} 
                     target="_blank" 
                     rel="noopener noreferrer"
-                    className="inline-block text-primary hover:text-primary/80 font-medium transition-colors"
+                    className="inline-block text-primary hover:text-primary/80 font-medium transition-colors text-sm lg:text-base min-h-[44px] flex items-center"
                   >
                     Ver projeto →
                   </a>

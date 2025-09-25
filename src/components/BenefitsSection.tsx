@@ -37,32 +37,32 @@ const benefits = [
 
 const BenefitsSection = () => {
   return (
-    <section className="py-24 bg-background">
+    <section className="py-16 lg:py-24 bg-background">
       <div className="container mx-auto px-4">
-        <div className="text-center space-y-6 mb-16">
-          <h2 className="text-4xl lg:text-5xl font-bold">
+        <div className="text-center space-y-4 lg:space-y-6 mb-12 lg:mb-16">
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold">
             Benefícios das Landing Pages para{" "}
             <span className="text-primary">Estabelecimentos Locais</span>
           </h2>
-          <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
+          <p className="text-lg sm:text-xl text-muted-foreground max-w-3xl mx-auto">
             Descubra como uma landing page profissional pode revolucionar seu negócio local
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3 lg:gap-8">
           {benefits.map((benefit, index) => (
             <Card 
               key={index} 
               className="group hover:shadow-card transition-all duration-300 hover:-translate-y-2 border-border/50 bg-gradient-card"
             >
-              <CardContent className="p-8 text-center space-y-4">
-                <div className="w-16 h-16 mx-auto bg-gradient-primary rounded-full flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
-                  <benefit.icon className="w-8 h-8 text-white" />
+              <CardContent className="p-6 lg:p-8 text-center space-y-4">
+                <div className="w-14 h-14 lg:w-16 lg:h-16 mx-auto bg-gradient-primary rounded-full flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+                  <benefit.icon className="w-7 h-7 lg:w-8 lg:h-8 text-white" />
                 </div>
-                <h3 className="text-xl font-semibold text-foreground">
+                <h3 className="text-lg lg:text-xl font-semibold text-foreground">
                   {benefit.title}
                 </h3>
-                <p className="text-muted-foreground leading-relaxed">
+                <p className="text-sm lg:text-base text-muted-foreground leading-relaxed">
                   {benefit.description}
                 </p>
               </CardContent>

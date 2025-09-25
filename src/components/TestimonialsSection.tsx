@@ -28,24 +28,24 @@ const testimonials = [
 
 const TestimonialsSection = () => {
   return (
-    <section className="py-24 bg-gradient-card">
+    <section className="py-16 lg:py-24 bg-gradient-card">
       <div className="container mx-auto px-4">
-        <div className="text-center space-y-6 mb-16">
-          <h2 className="text-4xl lg:text-5xl font-bold">
+        <div className="text-center space-y-4 lg:space-y-6 mb-12 lg:mb-16">
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold">
             Depoimentos de <span className="text-primary">Clientes</span>
           </h2>
-          <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
+          <p className="text-lg sm:text-xl text-muted-foreground max-w-3xl mx-auto">
             Veja o que nossos clientes têm a dizer sobre os resultados alcançados
           </p>
         </div>
 
-        <div className="grid lg:grid-cols-3 gap-8">
+        <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3 lg:gap-8">
           {testimonials.map((testimonial, index) => (
             <Card 
               key={index}
               className="group hover:shadow-card transition-all duration-300 hover:-translate-y-2 border-border/50 bg-card"
             >
-              <CardContent className="p-8 space-y-6">
+              <CardContent className="p-6 lg:p-8 space-y-6">
                 {/* Stars */}
                 <div className="flex space-x-1">
                   {[...Array(testimonial.rating)].map((_, i) => (
